@@ -1,0 +1,424 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+  <head>
+    <meta name="generator" content="HelpNDoc Freeware Edition">
+    <link rel="StyleSheet" href="toc.css" type="text/css"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript" src="jquery.treeview.min.js"></script>
+    <script type="text/javascript" src="jquery.rich-array-hnd.js"></script>
+    <script type="text/javascript" src="searchdata.js"></script>
+    <script type="text/javascript"><!--
+      $(document).ready(function(){
+        $("#toc").treeview(
+        )
+        $("#keywords").treeview({collapsed: true});
+        $(document.body).click(function(e){var $target = $(e.target); if($target.is("a")) return; hidePopup();});
+        $(function(){var tabContainers = $("div.tabs > div");tabContainers.hide().filter(":first").show();$("div.tabs ul.tabNavigation a").click(function(){tabContainers.hide();
+        tabContainers.filter(this.hash).show();$("div.tabs ul.tabNavigation a").removeClass("selected");$(this).addClass("selected");return false;}).filter(":first").click();});
+      });
+      function hidePopup() {if($("#popupMenu")) $("#popupMenu").remove();}
+      function showPopup(oSender,aLinks){hidePopup();if (aLinks==0) return true;var oParentDiv=document.createElement("DIV");oParentDiv.id="popupMenu";var oLink,oBr=null;
+      for (var nCnt=0;nCnt<aLinks.length;nCnt++){oLink=document.createElement("A");oLink.innerHTML=aLinks[nCnt][0];oLink.href=aLinks[nCnt][1];oLink.target="FrameMain";oLink.onclick=hidePopup;
+      oParentDiv.appendChild(oLink);if (nCnt<aLinks.length-1){oBr=document.createElement("BR");oParentDiv.appendChild(oBr);}}document.body.appendChild(oParentDiv);var pos=$(oSender).offset(); 
+      var height=$(oSender).height();$(oParentDiv).css({"backgroundColor": "#EEEEEE","border": "1px solid #999999","position": "absolute","left": (pos.left+20)+"px","top": (pos.top+height+5)+"px",
+      "padding": 5+"px"});$(oParentDiv).show();return false;}
+      function performSearch(){sValue = $("#search_value").val().toLowerCase();var aValues = sValue.split(" ");var aFinalResults = [];for (var nValue = 0; nValue < aValues.length; nValue++){if (aValues[nValue] == "") continue;var aResults = oSearchData[aValues[nValue]];if (aResults && aResults.length > 0){if (nValue == 0) aFinalResults = aResults
+else aFinalResults = jQuery.richArray.intersect(aFinalResults, aResults);}else{aFinalResults = [];break;}}if (aFinalResults.length > 0){$("#search_results").html("Found " + aFinalResults.length + " results");for (var nCnt = 0; nCnt < aFinalResults.length; nCnt++){var oElmt = document.createElement("DIV");oElmt.innerHTML = "<a href='" + aFinalResults[nCnt][0] + "?search=" + sValue + "' target='FrameMain'>" + aFinalResults[nCnt][1] + "</a> (" + aFinalResults[nCnt][2] + ")<br/>";$(oElmt).appendTo($("#search_results"));}}else{$("#search_results").html("No result found");}}
+    //--></script>
+    <style type="text/css">
+      ul.tabNavigation{list-style: none;margin: 0;padding: 10px;}ul.tabNavigation li{display: inline;}ul.tabNavigation li A{padding: 3px 5px;background-color: #ccc;color: #000;
+      text-decoration: none;}ul.tabNavigation li A.selected,ul.tabNavigation li A:hover{background-color: #333;color: #fff;}ul.tabNavigation li A:focus{outline: 0;}
+      </style>
+  </head>
+
+  <body>
+  
+    <div class="tabs">
+      <ul class="tabNavigation">
+        <li><a href="#tab_toc">Contents</a></li>
+        <li><a href="#tab_keywords">Index</a></li>
+        <li><a href="#tab_search">Search</a></li>
+      </ul>
+      <div id="tab_toc">
+        <ul id="toc" class="filetree">
+          
+          <li>
+            <a href="Introduction2.html" class="folder" target="FrameMain">Introduction</a>
+            <ul>
+              
+              <li>
+                <a href="WhatIsDbSee2.html" class="file" target="FrameMain">What is DbSee ?</a>
+              </li>
+              
+              <li>
+                <a href="WhoCanUseDbSee2.html" class="file" target="FrameMain">Who Can Use DbSee ?</a>
+              </li>
+              
+              <li>
+                <a href="DoesItWorkwithAllDatabases2.html" class="file" target="FrameMain">Does It Work with All Databases ?</a>
+              </li>
+              
+              <li>
+                <a href="License2.html" class="file" target="FrameMain">License</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="GettingHelp22.html" class="file" target="FrameMain">Getting Help</a>
+          </li>
+          
+          <li>
+            <a href="GettingStarted2.html" class="folder" target="FrameMain">Getting Started</a>
+            <ul>
+              
+              <li>
+                <a href="Gettinghelp3.html" class="file" target="FrameMain">Installing DbSee</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="QuickDemo2.html" class="folder" target="FrameMain">Quick Demo</a>
+            <ul>
+              
+              <li>
+                <a href="TablesMasterDetail2.html" class="file" target="FrameMain">Tables: Master-Detail</a>
+              </li>
+              
+              <li>
+                <a href="RecordViewLookup2.html" class="file" target="FrameMain">Record View &amp; Lookup</a>
+              </li>
+              
+              <li>
+                <a href="MemoBlobView2.html" class="file" target="FrameMain">Memo &amp; Blob View</a>
+              </li>
+              
+              <li>
+                <a href="TableColumnsInfo2.html" class="file" target="FrameMain">Table: Columns  Info</a>
+              </li>
+              
+              <li>
+                <a href="GridGoodies2.html" class="folder" target="FrameMain">Grid Goodies</a>
+                <ul>
+                  
+                  <li>
+                    <a href="AutoAdjColm2.html" class="file" target="FrameMain">Auto Adjust Column Width</a>
+                  </li>
+                  
+                  <li>
+                    <a href="ColumnsCustomize2.html" class="file" target="FrameMain">Columns Customize</a>
+                  </li>
+                  
+                  <li>
+                    <a href="AutoGroup2.html" class="file" target="FrameMain">Auto Group</a>
+                  </li>
+                  
+                  <li>
+                    <a href="AutoFilter2.html" class="file" target="FrameMain">Auto Filter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="AutoSort2.html" class="file" target="FrameMain">Auto Sort</a>
+                  </li>
+                  
+                  <li>
+                    <a href="AutoSearch2.html" class="file" target="FrameMain">Auto Search</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="UsingDbSee2.html" class="folder" target="FrameMain">Using DbSee</a>
+            <ul>
+              
+              <li>
+                <a href="UserInterface2.html" class="file" target="FrameMain">User Interface</a>
+              </li>
+              
+              <li>
+                <a href="ConfiguringDbSeeOptions2.html" class="file" target="FrameMain">Configuring DbSee Options</a>
+              </li>
+              
+              <li>
+                <a href="ConnectingtoDb2.html" class="folder" target="FrameMain">Connecting to Database</a>
+                <ul>
+                  
+                  <li>
+                    <a href="SettingupaDbConnection2.html" class="file" target="FrameMain">The Select/Create Connection Dialog</a>
+                  </li>
+                  
+                  <li>
+                    <a href="ConnectionDescriptionandType2.html" class="file" target="FrameMain">Connection Description and Type</a>
+                  </li>
+                  
+                  <li>
+                    <a href="ConnectionParameters2.html" class="file" target="FrameMain">Connection Parameters</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="DisplayingData2.html" class="folder" target="FrameMain">Displaying Data</a>
+                <ul>
+                  
+                  <li>
+                    <a href="ViewingTableData2.html" class="file" target="FrameMain">Displaying Table Data</a>
+                  </li>
+                  
+                  <li>
+                    <a href="FilteringData2.html" class="file" target="FrameMain">Filtering Data</a>
+                  </li>
+                  
+                  <li>
+                    <a href="EditingTableData2.html" class="file" target="FrameMain">Editing Table Data</a>
+                  </li>
+                  
+                  <li>
+                    <a href="DisplayingViewData2.html" class="file" target="FrameMain">Displaying View Data</a>
+                  </li>
+                  
+                  <li>
+                    <a href="GridToolbar2.html" class="file" target="FrameMain">Data Grid Features</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="CreatingExecutingQueries2.html" class="folder" target="FrameMain">Creating &amp; Executing Queries</a>
+                <ul>
+                  
+                  <li>
+                    <a href="CreatingAndEditingQueries2.html" class="file" target="FrameMain">Creating And Editing Queries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="DisplayingQueryData2.html" class="file" target="FrameMain">Displaying Query Data</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="KnownIssuesLimitations2.html" class="file" target="FrameMain">Known Issues &amp; Limitations</a>
+          </li>
+          
+          <li>
+            <a href="VersionHistory2.html" class="file" target="FrameMain">Version History</a>
+          </li>
+      </ul>
+    </div>
+    
+    <div id="tab_keywords">
+      <ul id="keywords" class="filetree">
+        
+        <li>
+          <a href="AutoAdjColm.html" target="FrameMain" class="file" onclick="hidePopup();">Adjust</a>
+        </li>
+        
+        <li>
+          <a href="MemoBlobView.html" target="FrameMain" class="file" onclick="hidePopup();">Blob</a>
+        </li>
+        
+        <li>
+          <a href="KnownIssuesLimitations.html" target="FrameMain" class="file" onclick="hidePopup();">Bug</a>
+        </li>
+        
+        <li>
+          <a href="TableColumnsInfo.html" target="FrameMain" class="file" onclick="hidePopup();">Columns</a>
+        </li>
+        
+        <li>
+          <a href="ConnectingtoDb.html" target="FrameMain" class="file" onclick="hidePopup();">connect</a>
+        </li>
+        
+        <li>
+          <a href="ConnectingtoDb.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Connecting to Database', 'ConnectingtoDb.html'], ['The Select/Create Connection Dialog', 'SettingupaDbConnection.html'], ['Connection Parameters', 'ConnectionParameters.html']]);">Connection</a>
+        </li>
+        
+        <li>
+          <a href="ConnectionParameters.html" target="FrameMain" class="file" onclick="hidePopup();">Connection Parameters</a>
+        </li>
+        
+        <li>
+          <a href="ConnectionDescriptionandType.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Connection Description and Type', 'ConnectionDescriptionandType.html'], ['Connecting to Database', 'ConnectingtoDb.html']]);">Connection Type</a>
+        </li>
+        
+        <li>
+          <a href="CreatingAndEditingQueries.html" target="FrameMain" class="file" onclick="hidePopup();">Create</a>
+        </li>
+        
+        <li>
+          <a href="GettingHelp2.html" target="FrameMain" class="file" onclick="hidePopup();">Credits</a>
+        </li>
+        
+        <li>
+          <a href="ColumnsCustomize.html" target="FrameMain" class="file" onclick="hidePopup();">Customize</a>
+        </li>
+        
+        <li>
+          <a href="DisplayingData.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Displaying Data', 'DisplayingData.html'], ['Filtering Data', 'FilteringData.html'], ['Editing Table Data', 'EditingTableData.html'], ['Data Grid Features', 'GridToolbar.html'], ['Displaying Query Data', 'DisplayingQueryData.html']]);">Data</a>
+        </li>
+        
+        <li>
+          <a href="GridGoodies.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Grid Goodies', 'GridGoodies.html'], ['Data Grid Features', 'GridToolbar.html']]);">Data Grid</a>
+        </li>
+        
+        <li>
+          <a href="DoesItWorkwithAllDatabases.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Does It Work with All Databases ?', 'DoesItWorkwithAllDatabases.html'], ['Connecting to Database', 'ConnectingtoDb.html']]);">Database</a>
+        </li>
+        
+        <li>
+          <a href="QuickDemo.html" target="FrameMain" class="file" onclick="hidePopup();">Demo</a>
+        </li>
+        
+        <li>
+          <a href="DisplayingData.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Displaying Data', 'DisplayingData.html'], ['Displaying Query Data', 'DisplayingQueryData.html'], ['Displaying Table Data', 'ViewingTableData.html'], ['Displaying View Data', 'DisplayingViewData.html']]);">Display</a>
+        </li>
+        
+        <li>
+          <a href="CreatingAndEditingQueries.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Creating And Editing Queries', 'CreatingAndEditingQueries.html'], ['Editing Table Data', 'EditingTableData.html']]);">Edit</a>
+        </li>
+        
+        <li>
+          <a href="WhatIsDbSee.html" target="FrameMain" class="file" onclick="return showPopup(this, [['What is DbSee ?', 'WhatIsDbSee.html'], ['Data Grid Features', 'GridToolbar.html']]);">Features</a>
+        </li>
+        
+        <li>
+          <a href="GettingHelp2.html" target="FrameMain" class="file" onclick="hidePopup();">Feedback</a>
+        </li>
+        
+        <li>
+          <a href="AutoFilter.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Auto Filter', 'AutoFilter.html'], ['Filtering Data', 'FilteringData.html']]);">Filter</a>
+        </li>
+        
+        <li>
+          <a href="GridGoodies.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Grid Goodies', 'GridGoodies.html'], ['Data Grid Features', 'GridToolbar.html']]);">Grid</a>
+        </li>
+        
+        <li>
+          <a href="AutoGroup.html" target="FrameMain" class="file" onclick="hidePopup();">Group</a>
+        </li>
+        
+        <li>
+          <a href="GettingHelp2.html" target="FrameMain" class="file" onclick="hidePopup();">Help</a>
+        </li>
+        
+        <li>
+          <a href="VersionHistory.html" target="FrameMain" class="file" onclick="hidePopup();">History</a>
+        </li>
+        
+        <li>
+          <a href="Gettinghelp.html" target="FrameMain" class="file" onclick="hidePopup();">Install</a>
+        </li>
+        
+        <li>
+          <a href="UserInterface.html" target="FrameMain" class="file" onclick="hidePopup();">interface</a>
+        </li>
+        
+        <li>
+          <a href="KnownIssuesLimitations.html" target="FrameMain" class="file" onclick="hidePopup();">Issue</a>
+        </li>
+        
+        <li>
+          <a href="License.html" target="FrameMain" class="file" onclick="hidePopup();">License</a>
+        </li>
+        
+        <li>
+          <a href="KnownIssuesLimitations.html" target="FrameMain" class="file" onclick="hidePopup();">Limitation</a>
+        </li>
+        
+        <li>
+          <a href="RecordViewLookup.html" target="FrameMain" class="file" onclick="hidePopup();">Lookup</a>
+        </li>
+        
+        <li>
+          <a href="RecordViewLookup.html" target="FrameMain" class="file" onclick="hidePopup();">Many-to-One</a>
+        </li>
+        
+        <li>
+          <a href="TablesMasterDetail.html" target="FrameMain" class="file" onclick="hidePopup();">Master Detail</a>
+        </li>
+        
+        <li>
+          <a href="MemoBlobView.html" target="FrameMain" class="file" onclick="hidePopup();">Memo</a>
+        </li>
+        
+        <li>
+          <a href="ConfiguringDbSeeOptions.html" target="FrameMain" class="file" onclick="hidePopup();">Options</a>
+        </li>
+        
+        <li>
+          <a href="ViewingTableData.html" target="FrameMain" class="file" onclick="hidePopup();">Orientation</a>
+        </li>
+        
+        <li>
+          <a href="CreatingExecutingQueries.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Creating & Executing Queries', 'CreatingExecutingQueries.html'], ['Creating And Editing Queries', 'CreatingAndEditingQueries.html'], ['Displaying Query Data', 'DisplayingQueryData.html']]);">Query</a>
+        </li>
+        
+        <li>
+          <a href="RecordViewLookup.html" target="FrameMain" class="file" onclick="hidePopup();">Record</a>
+        </li>
+        
+        <li>
+          <a href="AutoSearch.html" target="FrameMain" class="file" onclick="hidePopup();">Search</a>
+        </li>
+        
+        <li>
+          <a href="SettingupaDbConnection.html" target="FrameMain" class="file" onclick="hidePopup();">Select</a>
+        </li>
+        
+        <li>
+          <a href="AutoSort.html" target="FrameMain" class="file" onclick="hidePopup();">Sort</a>
+        </li>
+        
+        <li>
+          <a href="CreatingExecutingQueries.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Creating & Executing Queries', 'CreatingExecutingQueries.html'], ['Creating And Editing Queries', 'CreatingAndEditingQueries.html']]);">SQL</a>
+        </li>
+        
+        <li>
+          <a href="DoesItWorkwithAllDatabases.html" target="FrameMain" class="file" onclick="hidePopup();">Support</a>
+        </li>
+        
+        <li>
+          <a href="ViewingTableData.html" target="FrameMain" class="file" onclick="hidePopup();">Table</a>
+        </li>
+        
+        <li>
+          <a href="EditingTableData.html" target="FrameMain" class="file" onclick="hidePopup();">Table Edit</a>
+        </li>
+        
+        <li>
+          <a href="ViewingTableData.html" target="FrameMain" class="file" onclick="hidePopup();">Tile</a>
+        </li>
+        
+        <li>
+          <a href="WhoCanUseDbSee.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Who Can Use DbSee ?', 'WhoCanUseDbSee.html'], ['Using DbSee', 'UsingDbSee.html']]);">Use</a>
+        </li>
+        
+        <li>
+          <a href="VersionHistory.html" target="FrameMain" class="file" onclick="hidePopup();">Version</a>
+        </li>
+        
+        <li>
+          <a href="DisplayingViewData.html" target="FrameMain" class="file" onclick="hidePopup();">View</a>
+        </li>
+        
+        <li>
+          <a href="AutoAdjColm.html" target="FrameMain" class="file" onclick="hidePopup();">Width</a>
+        </li>
+    </ul>
+  </div>
+  <div id="tab_search" style="padding:10px">
+    Search: <form onsubmit="performSearch(); return false;"><input id="search_value"></input><input type="submit" value="search"/></form><div id="search_results"></div>
+  </div>
+</div>
+</div>
+</body>
+
+</html>

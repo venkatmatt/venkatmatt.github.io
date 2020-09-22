@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Tables: Master-Detail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 10pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #000080;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #000080;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Hint */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #aca899;
+}
+span.rvts7 /* Font Hint Title */
+{
+ font-size: 15pt;
+ font-weight: bold;
+ color: #716f64;
+}
+span.rvts8 /* Font Hint Bold */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #aca899;
+}
+span.rvts9 /* Font Hint Italic */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: italic;
+ color: #aca899;
+}
+span.rvts10
+{
+ font-weight: bold;
+}
+span.rvts11
+{
+ text-decoration: underline;
+}
+span.rvts12
+{
+ font-style: italic;
+}
+span.rvts13
+{
+ font-family: 'Wingdings 3';
+ font-weight: bold;
+}
+span.rvts14 /* Font Style */
+{
+ font-size: 14pt;
+ font-family: 'Calibri';
+ color: #ffff00;
+}
+span.rvts15 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts16, span.rvts16 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ margin: 0px 0px 4px 0px;
+}
+.rvps3 /* Paragraph Style */
+{
+ background: #880000;
+ padding: 5px 5px 2px 5px;
+ margin: -5px -5px 18px -5px;
+}
+.rvps4 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+--></style>
+<link rel="StyleSheet" href="hnd.css" type="text/css"/>
+<script type="text/javascript">if(top.frames.length == 0) { sTopic = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length); top.location.href="../DbSee_Help.htm?" + sTopic; }</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="hnd.js"></script>
+<meta name="generator" content="HelpNDoc Freeware Edition"></head>
+<body>
+<p class=rvps3><span class=rvts14>Tables: Master-Detail</span></p>
+<p class=rvps2> One of the best features of DbSee is its ability to automatically show data in <span class=rvts10>Master/Detail</span> relationships.</p>
+<p class=rvps2> </p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li value=1 class=rvps2>Select the <span class=rvts10>Tables</span> tab if it is not already selected. Under this tab the Tables of the Database are displayed in a Tree List.</li>
+<li value=2 class=rvps2>Select the <span class=rvts10>Customer</span> table and click the Checkbox to the right of it - this opens the table and shows it data on the right under the <span class=rvts10>Customer</span> tab. The Tables tree also expands at Customer and displays its children <span class=rvts10>Orders</span> and <span class=rvts10>Order Details</span>.</li>
+<li value=3 class=rvps2>Now Check the <span class=rvts10>Orders</span> table to open it - its data is displayed <span class=rvts11>under</span> the Customer's data on the <span class=rvts11>same</span> tab. If you now click on any row of the <span class=rvts12>Customers</span> grid the <span class=rvts12>Orders</span> grid below will immediately display the data corresponding to the selected Customer.</li>
+<li value=4 class=rvps2>Now check the<span class=rvts10> Order Details</span> table on the Table tree - its data is now displayed to the right of the <span class=rvts12>Orders</span> grid, for the Order selected in the <span class=rvts12>Orders</span> grid. </li>
+</ol>
+<p><br></p>
+<p>We thus have a Master-Detail Related Data between <span class=rvts10>Customers </span><span class=rvts13>&#162;</span><span class=rvts10> Orders&nbsp; </span><span class=rvts13>&#162;</span><span class=rvts10> Order Detail</span></p>
+<p><br></p>
+<p><img border=0 alt="" hspace=1 vspace=1 src="img_212.gif"></p>
+<p><br></p>
+<p><span class=rvts10><br></span></p>
+<p class=rvps4><span class=rvts15>Created with the Freeware Edition of HelpNDoc: </span><a class=rvts16 href="http://www.helpndoc.com" target="_blank">Easy to use tool to create HTML Help files and Help web sites</a></p>
+</body></html>

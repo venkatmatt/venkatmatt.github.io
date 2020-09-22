@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Data Grid Features</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 10pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #000080;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #000080;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Hint */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #aca899;
+}
+span.rvts7 /* Font Hint Title */
+{
+ font-size: 15pt;
+ font-weight: bold;
+ color: #716f64;
+}
+span.rvts8 /* Font Hint Bold */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #aca899;
+}
+span.rvts9 /* Font Hint Italic */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: italic;
+ color: #aca899;
+}
+span.rvts10 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts11 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts12 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts13 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts14 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts15 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts16
+{
+ font-weight: bold;
+ background-color: #ccffcc;
+}
+span.rvts17
+{
+ font-weight: bold;
+}
+a.rvts18, span.rvts18
+{
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts18:hover { color: #0000ff; }
+a.rvts19, span.rvts19
+{
+ font-weight: bold;
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts19:hover { color: #0000ff; }
+span.rvts20 /* Font Style */
+{
+ font-size: 14pt;
+ font-family: 'Calibri';
+ color: #ffff00;
+}
+span.rvts21 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts22, span.rvts22 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ margin: 0px 0px 0px 25px;
+}
+.rvps3
+{
+ margin: 0px 0px 0px 1px;
+}
+.rvps4 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps5 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps6 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps7 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps8 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps9 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps10
+{
+ margin: 0px 107px 0px 15px;
+}
+.rvps11
+{
+ margin: 0px 0px 0px 15px;
+}
+.rvps12
+{
+ margin: 0px 0px 0px 7px;
+}
+.rvps13
+{
+ margin: 0px 0px 4px 7px;
+}
+.rvps14
+{
+ margin: 0px 232px 0px 15px;
+}
+.rvps15
+{
+ margin: 0px 107px 0px 39px;
+}
+.rvps16 /* Paragraph Style */
+{
+ background: #880000;
+ padding: 5px 5px 2px 5px;
+ margin: -5px -5px 18px -5px;
+}
+.rvps17 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+--></style>
+<link rel="StyleSheet" href="hnd.css" type="text/css"/>
+<script type="text/javascript">if(top.frames.length == 0) { sTopic = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length); top.location.href="../DbSee_Help.htm?" + sTopic; }</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="hnd.js"></script>
+<meta name="generator" content="HelpNDoc Freeware Edition"></head>
+<body>
+<p class=rvps16><span class=rvts20>Grid Toolbar</span></p>
+<p>The <span class=rvts17>Grid Toolbar</span> situated just above the Data Grid provides a number of button to to <span class=rvts17>control</span> and <span class=rvts17>manipulate</span> the <span class=rvts17>Grid</span>.</p>
+<p><br></p>
+<p class=rvps2><img border=0 alt="" hspace=1 vspace=1 src="img_284.gif"></p>
+<p class=rvps2><br></p>
+<p class=rvps3>Note that depending on the Options set in the DbSee's Options dialog, some buttons <span class=rvts17>may not be visible</span>. Some buttons are <span class=rvts17>disabled</span> depending on the status of the grid.</p>
+<p class=rvps3><br></p>
+<p class=rvps11><span class=rvts17>Navigation</span></p>
+<div class=rvps10><table border=1 cellpadding=1 cellspacing=0 style="border-color: #c0c0c0 #808080 #808080 #c0c0c0; border-style: solid;">
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid; background-color: #ccffcc;"><p class=rvps1><span class=rvts16>Button</span></p>
+</td>
+<td width=174 style="border-color: #808080; border-style: solid; background-color: #ccffcc;"><p class=rvps1><span class=rvts16>Function</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_287.gif"></p>
+</td>
+<td width=174 style="border-color: #808080; border-style: solid;"><p class=rvps12>To <span class=rvts17>First</span> Row</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_288.gif"></p>
+</td>
+<td width=174 style="border-color: #808080; border-style: solid;"><p class=rvps12>To <span class=rvts17>Previous</span> Row</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_289.gif"></p>
+</td>
+<td width=174 style="border-color: #808080; border-style: solid;"><p class=rvps12>To <span class=rvts17>Next</span> Row</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_290.gif"></p>
+</td>
+<td width=174 style="border-color: #808080; border-style: solid;"><p class=rvps12>To <span class=rvts17>Last</span> Row</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps10><br></p>
+<p class=rvps10><span class=rvts17>Grid Display Control</span></p>
+<div class=rvps10><table border=1 cellpadding=1 cellspacing=0 style="border-color: #c0c0c0 #808080 #808080 #c0c0c0; border-style: solid;">
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid; background-color: #ccffcc;"><p class=rvps1><span class=rvts16>Button</span></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid; background-color: #ccffcc;"><p class=rvps1><span class=rvts16>Function</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_291.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Auto Adjust Column width</span> to fit display area. Useful when you have many columns. After Auto Adjust you can resize column width by dragging the vertical borders. This is a Toggle button. See <a class=rvts18 href="AutoAdjColm.html">Quick Demo / Grid Goodies</a> for more info and illustration.</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_292.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Customize Columns</span>: clicking this displays the customize columns popup. Select the Columns you want to display and Unselect the rest. Rearrange the Column Display order by drag and drop. See <a class=rvts18 href="ColumnsCustomize.html">Quick Demo - Columns Customize</a> for more info and illustration</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_293.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Change grid font</span> - invokes standard Font Dialog that changes the Grid Font.</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img align=absmiddle border=0 width=16 height=16 alt="" hspace=1 vspace=1 src="img_294.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps13>Displays <span class=rvts17>Grid Options</span> drop-down <span class=rvts17>menu. </span>The default values of these options can be set in DbSee Options. <img align=right border=0 width=161 height=174 alt="" hspace=1 vspace=1 src="img_295.gif"></p>
+<p class=rvps13><span class=rvts17>Allow Edit</span> and <span class=rvts17>Edit on Click</span> determines if the data can be edited and how - see <a class=rvts18 href="EditingTableData.html">Editing Table</a><a class=rvts18 href="EditingTableData.html"> Data</a>&nbsp; for more information.&nbsp; If the <a class=rvts18 href="ConfiguringDbSeeOptions.html">DbSee Option</a> Read-Only is set then these two menu items are hidden.</p>
+<p class=rvps13>The <span class=rvts17>Load All Data</span> to Grid must be enabled for the <span class=rvts17>Auto Filter / Group / Sort</span> features to work - see the relevant sections under <a class=rvts18 href="GridGoodies.html">Grid Goodies</a> for more information on the <span class=rvts17>Auto..</span> features.</p>
+<p class=rvps12><br></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_296.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Expands ALL Nodes</span> when Grid data is grouped using the<a class=rvts18 href="AutoGroup.html"> Auto Group feature</a> or when the Data is displayed in a Tree Grid.</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img align=absmiddle border=0 width=16 height=16 alt="" hspace=1 vspace=1 src="img_297.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Collapses ALL Nodes</span> when Grid data is grouped using the<a class=rvts18 href="AutoGroup.html"> Auto Group feature</a> or when the Data is displayed in a Tree Grid</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_298.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12>Removes Grouping when Grid data is grouped using the<a class=rvts18 href="AutoGroup.html"> Auto Group feature</a></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_299.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Hides</span> or <span class=rvts17>Displays</span> the <span class=rvts17>Record View</span> panel in which the current row is displayed in a two column (Column name &amp; Value) grid. Record View is also used to display <a class=rvts18 href="RecordViewLookup.html">Lookup</a> data.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps10><span class=rvts17><br></span></p>
+<p class=rvps11><span class=rvts17>Copy &amp; Export</span></p>
+<div class=rvps10><table border=1 cellpadding=1 cellspacing=0 style="border-color: #c0c0c0 #808080 #808080 #c0c0c0; border-style: solid;">
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_300.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Copies</span> <span class=rvts17>All</span> or <span class=rvts17>Selected</span> Rows to <span class=rvts17>Clipboard</span>. If <span class=rvts17>more than one is selected</span> then only the selected rows are copied else <span class=rvts17>all rows</span> are copied. You can paste the copied rows into another application as MS Excel, Word etc. To copy only the current row use the Right Click popup menu of the Grid.</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_301.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Exports All</span> or <span class=rvts17>Selected Rows</span> to a File. If <span class=rvts17>more than one is selected</span> then only the selected rows are exported else <span class=rvts17>all rows</span> are exported. In the Save Dialog that is displayed change the default file Name if necessary and select the File Type -<span class=rvts17> MS Excel, Text, XML </span>or<span class=rvts17> HTML.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><br></p>
+<p class=rvps11><span class=rvts17>Data Editing: </span>Visibility of these buttons depend on the <a class=rvts19 href="ConfiguringDbSeeOptions.html">Data Editing Options</a> of DbSee</p>
+<div class=rvps10><table border=1 cellpadding=1 cellspacing=0 style="border-color: #c0c0c0 #808080 #808080 #c0c0c0; border-style: solid;">
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_302.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Adds a New Record</span> after the last row of the Grid. Fill in the Data &amp; click the <span class=rvts17>Save Changes</span> button to save or the <span class=rvts17>Cancel Changes</span> button to discard the newly added record.</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_303.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Deletes the Current Record</span> after displaying a confirmation. Note that the deleted record cannot be restored.</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_304.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Saves Changes</span> done to the current record in the Grid or Record View or Memo/Blob view. Moving to another record also posts the edits.</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=51 style="border-color: #808080; border-style: solid;"><p class=rvps1><img border=0 width=14 height=16 alt="" hspace=1 vspace=1 src="img_305.gif"></p>
+</td>
+<td width=549 style="border-color: #808080; border-style: solid;"><p class=rvps12><span class=rvts17>Cancel Edits</span> done to the current record, if you have not moved away to another record.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps10><span class=rvts17><br></span></p>
+<p class=rvps10><span class=rvts17>Grid Popup (context) Menu</span><img align=right border=0 alt="" hspace=1 vspace=1 src="img_306.jpg"></p>
+<p class=rvps14><span class=rvts17>Right clicking</span> on the Data Grid pops up a context menu </p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps15 style="margin-left: 0">Use the <span class=rvts17>Copy Cell</span> <span class=rvts17>Content</span> to copy the content of the cell to the Clipboard</li>
+<li class=rvps15 style="margin-left: 0">Use the <span class=rvts17>Copy Row</span> to copy the content of the entire row to the Clipboard.</li>
+</ul></ul>
+<p class=rvps17><span class=rvts21>Created with the Freeware Edition of HelpNDoc: </span><a class=rvts22 href="http://www.helpndoc.com" target="_blank">Free CHM Help documentation generator</a></p>
+</body></html>

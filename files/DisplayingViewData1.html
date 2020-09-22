@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Displaying View Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 10pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #000080;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #000080;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Hint */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #aca899;
+}
+span.rvts7 /* Font Hint Title */
+{
+ font-size: 15pt;
+ font-weight: bold;
+ color: #716f64;
+}
+span.rvts8 /* Font Hint Bold */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #aca899;
+}
+span.rvts9 /* Font Hint Italic */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: italic;
+ color: #aca899;
+}
+span.rvts10
+{
+ font-weight: bold;
+}
+span.rvts11
+{
+ text-decoration: underline;
+}
+a.rvts12, span.rvts12
+{
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts12:hover { color: #0000ff; }
+span.rvts13
+{
+ font-weight: bold;
+ text-decoration: underline;
+}
+span.rvts14
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ font-weight: bold;
+}
+span.rvts15 /* Font Style */
+{
+ font-size: 14pt;
+ font-family: 'Calibri';
+ color: #ffff00;
+}
+span.rvts16 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts17, span.rvts17 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-indent: -20px;
+ margin: 0px 0px 4px 20px;
+}
+.rvps3
+{
+ text-indent: -20px;
+ margin: 0px 0px 0px 20px;
+}
+.rvps4 /* Paragraph Style */
+{
+ background: #880000;
+ padding: 5px 5px 2px 5px;
+ margin: -5px -5px 18px -5px;
+}
+.rvps5 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+--></style>
+<link rel="StyleSheet" href="hnd.css" type="text/css"/>
+<script type="text/javascript">if(top.frames.length == 0) { sTopic = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length); top.location.href="../DbSee_Help.htm?" + sTopic; }</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="hnd.js"></script>
+<meta name="generator" content="HelpNDoc Freeware Edition"></head>
+<body>
+<p class=rvps4><span class=rvts15>Displaying View Data</span></p>
+<p>If the Database has any <span class=rvts10>Views</span> setup, then they are displayed under the <span class=rvts10>Views</span> <span class=rvts10>tab</span>.</p>
+<p><br></p>
+<p><img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_174.gif"> Views are customized subset of Tables data. They are very <span class=rvts10>similar</span> <span class=rvts10>to Tables</span> except that</p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li>They can <span class=rvts10>combine</span> data from <span class=rvts10>more than one Table</span>. </li>
+<li>They are <span class=rvts11>usually Read-only</span>. Even if they can be Updated, DbSee displays them as<span class=rvts10> Read-Only</span>.</li>
+<li>They need to be setup in the Database, using an SQL statement, usually by an authorized person such as a Database Administrator.</li>
+</ul>
+<p><br></p>
+<p><span class=rvts10>Displaying View data</span></p>
+<p>Selecting a View in the Views Tab, displays <span class=rvts10>Columns</span> of the selected View at the bottom panel titled<span class=rvts10> View Columns</span>. You can <span class=rvts11>optionally</span> Select or Unselect the columns <span class=rvts13>before</span><span class=rvts11> opening the View</span>.</p>
+<p><br></p>
+<p>Like Tables, Views can be opened in two different ways, to display their data:</p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li>If the number of records that will be displayed is <span class=rvts10>small</span> (less than a few thousand) <span class=rvts10>just</span> <span class=rvts10>Check</span> the <span class=rvts10>check box</span> to the left of the View to <span class=rvts10>Open</span> it.</li>
+<li></li>
+<li>If the number of records that will be displayed is <span class=rvts10>Large</span> then click on the <img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_175.jpg"> button. On the <a class=rvts12 href="FilteringData.html">Filter Dialog</a> that is displayed select the columns and set the conditions and click <span class=rvts10>OK</span>.</li>
+</ul>
+<p><span class=rvts10><br></span></p>
+<p class=rvps3><img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_176.gif"> Both<span class=rvts10> Query Parameters</span> and <span class=rvts10>Open Filtered</span> are used to <span class=rvts10>filter</span> the View data. The <span class=rvts10>Open Filtered</span> method is more <span class=rvts10>flexible:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li>You can select and set filter on <span class=rvts10>any number of Fields</span>. Query Parameters have fixed set of filters built-in and the conditions (comparison operator) cannot be changed.</li>
+<li>Open Filter dialog is more user friendly with drop down Calendar for date fields.</li>
+</ul>
+<p><br></p>
+<p class=rvps2><img align=absmiddle border=0 width=16 height=16 alt="" hspace=1 vspace=1 src="img_177.gif"> If you use DbSee primarily for <span class=rvts10>extracting data</span> you will <span class=rvts10>benefit</span> from setting up <span class=rvts10>Views</span> and executing them with <span class=rvts10>Open Filtered</span> method to get the exact data you want.</p>
+<p><span class=rvts14><br></span></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p>&nbsp;&nbsp; </p>
+<p class=rvps5><span class=rvts16>Created with the Freeware Edition of HelpNDoc: </span><a class=rvts17 href="http://www.helpndoc.com" target="_blank">Free PDF documentation generator</a></p>
+</body></html>

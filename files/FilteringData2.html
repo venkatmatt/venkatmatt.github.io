@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Filtering Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 10pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #000080;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #000080;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Hint */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ color: #aca899;
+}
+span.rvts7 /* Font Hint Title */
+{
+ font-size: 15pt;
+ font-weight: bold;
+ color: #716f64;
+}
+span.rvts8 /* Font Hint Bold */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
+ color: #aca899;
+}
+span.rvts9 /* Font Hint Italic */
+{
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: italic;
+ color: #aca899;
+}
+span.rvts10
+{
+ font-weight: bold;
+}
+a.rvts11, span.rvts11
+{
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts11:hover { color: #0000ff; }
+span.rvts12
+{
+ font-weight: bold;
+ text-decoration: underline;
+}
+a.rvts13, span.rvts13
+{
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts13:hover { color: #0000ff; }
+a.rvts14, span.rvts14
+{
+ text-decoration: none;
+}
+a.rvts14:hover { color: #0000ff; }
+span.rvts15
+{
+ font-weight: bold;
+ background-color: #c0c0c0;
+}
+span.rvts16
+{
+ text-decoration: underline;
+}
+span.rvts17
+{
+ font-style: italic;
+}
+span.rvts18
+{
+ font-style: italic;
+ font-weight: bold;
+}
+span.rvts19 /* Font Style */
+{
+ font-size: 14pt;
+ font-family: 'Calibri';
+ color: #ffff00;
+}
+span.rvts20 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts21, span.rvts21 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ margin: 0px 0px 5px 0px;
+}
+.rvps3
+{
+ text-indent: -20px;
+ margin: 0px 0px 4px 20px;
+}
+.rvps4
+{
+ margin: 0px 0px 0px 24px;
+}
+.rvps5
+{
+ text-indent: -20px;
+ margin: 0px 0px 4px 44px;
+}
+.rvps6 /* Paragraph Style */
+{
+ background: #880000;
+ padding: 5px 5px 2px 5px;
+ margin: -5px -5px 18px -5px;
+}
+.rvps7 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+--></style>
+<link rel="StyleSheet" href="hnd.css" type="text/css"/>
+<script type="text/javascript">if(top.frames.length == 0) { sTopic = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length); top.location.href="../DbSee_Help.htm?" + sTopic; }</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="hnd.js"></script>
+<meta name="generator" content="HelpNDoc Freeware Edition"></head>
+<body>
+<p class=rvps6><span class=rvts19>Filtering Data</span></p>
+<p>Data displayed by DbSee can be <span class=rvts10>filtered</span> in <span class=rvts10>two different ways</span>:</p>
+<p><br></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li class=rvps2>Filtering the data <span class=rvts12>when</span><span class=rvts10> it is read</span> from the Database, by using the Filter Dialog. This is what is described <span class=rvts10>in this section</span>.</li>
+<li class=rvps2>Filtering the data <span class=rvts12>after</span><span class=rvts10> it has been read</span> from the Database by using the <a class=rvts11 href="AutoFilter.html">Auto Filter feature of the Data Grid</a>.</li>
+</ul>
+<p class=rvps2><br></p>
+<p class=rvps2>When you open a Table with <span class=rvts10>large number of records</span>, it is <span class=rvts10>essential</span> that you filter the data <span class=rvts10>when it is read</span> from the Database. Reading and loading a lot of data without filtering would <span class=rvts10>slow down</span> the system, sometimes so much that it appears to have locked up. </p>
+<p class=rvps2>To filter the data when it is read, <span class=rvts10>select the Table</span> you want to open in the Tables Tree grid and instead of checking the Checkbox to open it, <span class=rvts10>Click</span> on the <img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_68.jpg"> button on the Tables Grid Toolbar. </p>
+<p><img align=absmiddle border=0 width=16 height=16 alt="" hspace=1 vspace=1 src="img_270.gif"> The <img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_271.jpg"> button is <span class=rvts10>disabled</span> when </p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li>a Table is already open - If you want to open it with filter, close it first and then click Open Filtered button.</li>
+<li>a Table appears as a Detail Table (a Child Node) - Detail tables display filtered data that corresponds to the Master record. </li>
+</ul>
+<p><br></p>
+<p class=rvps3><img align=absmiddle border=0 width=16 height=16 alt="" hspace=1 vspace=1 src="img_272.gif"> Alternatively you can also set the Option <span class=rvts10>Show Filter Dialog before Opening a Table or View </span>in DbSee <a class=rvts11 href="ConfiguringDbSeeOptions.html">Options</a><a class=rvts13 href="ConfiguringDbSeeOptions.html"> </a>which will automatically display the Filter Dialog whenever you open any Table (or View) by checking its checkbox on the Tables<a class=rvts14 href="ConfiguringDbSeeOptions.html"> Grid.</a></p>
+<p class=rvps3><img align=right border=0 alt="" hspace=6 vspace=6 src="img_273.gif"></p>
+<p class=rvps2>In the <span class=rvts10>Filter Dialog</span> that is displayed </p>
+<p class=rvps2><span class=rvts10>Select the Columns</span> (Fields) you want to include in the displayed data by Checking them. </p>
+<p class=rvps5><img align=absmiddle border=0 width=16 height=16 alt="" hspace=1 vspace=1 src="img_274.gif">You can use the <img align=absmiddle border=0 width=16 height=16 alt="" hspace=1 vspace=1 src="img_275.gif"> <span class=rvts10>Select All</span> and <img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_276.gif"> <span class=rvts10>UnSelect All</span> buttons to <span class=rvts10>quickly Check </span>or<span class=rvts10> Uncheck</span> <span class=rvts10>all</span> Fields.</p>
+<p class=rvps4><img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_277.gif"> Note that some Fields are <span class=rvts10>Checked and Grayed</span> and cannot be unchecked - these are <span class=rvts10>Key Fields</span> that are required for Master-Detail and Lookup features and must always be selected.</p>
+<p><br></p>
+<p class=rvps2><span class=rvts10>Set</span> a <span class=rvts10>Filter Condition</span> for <span class=rvts10>one </span>or<span class=rvts10> more columns</span> so that only the records meeting the filter condition are fetched from the Database.</p>
+<p class=rvps2>When the Filter Dialog is displayed for the <span class=rvts16>first time</span> it has all Fields checked, without any filter conditions indicated by <span class=rvts15>*ALL*</span> under the <span class=rvts17>Condition</span> Column.</p>
+<p class=rvps2><br></p>
+<p class=rvps2><span class=rvts10>To set a filter</span> for a Field, click on its cell under the <span class=rvts18>Condition</span> column. On the displayed drop-down list select the condition.</p>
+<p class=rvps2>The conditions displayed in drop-down list vary depending on the Data Type of the Field. At the <span class=rvts17>Value</span> column enter the Value to filter for. </p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li class=rvps2> <span class=rvts15>*ALL*</span>&nbsp; means&nbsp; <span class=rvts10>no</span> filtering for the that field.</li>
+<li class=rvps2><span class=rvts10>IS NULL</span> will fetch only those records whose Field's value <span class=rvts10>were never set - i.e blank</span>. </li>
+<li class=rvps2><span class=rvts10>IS NOT NULL</span> will fetch only those records whose Field has any <span class=rvts10>non-blank value.</span></li>
+<li class=rvps2><span class=rvts10>LIKE</span> is available <span class=rvts16>only for String Fields</span> and filters using a <span class=rvts10>wild-card comparison</span>. The <span class=rvts10>%</span> character matches <span class=rvts10>any number</span> of characters and the <span class=rvts10>_</span> (underscore) char matches any <span class=rvts10>single</span> character.&nbsp; </li>
+<li class=rvps2>For <span class=rvts10>Logical Fields</span> only<span class=rvts10> =</span> is available. The Value column displays a <span class=rvts10>check box</span>.</li>
+<li class=rvps2><span class=rvts10>String, Numeric </span>and<span class=rvts10> Date Fields</span> can have<span class=rvts10> =</span>,<span class=rvts10> &gt; </span>(greater than), <span class=rvts10>&lt;</span> (less than), <span class=rvts10>&lt;&gt;</span> (not equal to),<span class=rvts10> &gt;=</span> (greater or equal to) and <span class=rvts10>&lt;=</span> (Less than or equal to) conditions.</li>
+<li class=rvps2>You <span class=rvts10>cannot set filter for Memo/Blob fields</span> though they appear in the list.</li>
+</ul>
+<p class=rvps2><br></p>
+<p class=rvps2>Enter the <span class=rvts10>Value to filter for</span> under the <span class=rvts18>Value</span> column. </p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li class=rvps2>For <span class=rvts10>Date Fields</span> clicking on the Value column displays a <span class=rvts10>drop-down Calendar</span> in which you can select the date. </li>
+<li class=rvps2>For Logical Fields a check box is displayed.</li>
+<li class=rvps2>For<span class=rvts10> String Fields</span> Value is <span class=rvts10>case-sensitive</span>. You can use <span class=rvts10>wild-card</span> matching as described above.</li>
+<li class=rvps2>When you set filter for <span class=rvts16>more than one Field</span>, they are combined by the logical <span class=rvts10>AND</span> operation making the selected records more restrictive.</li>
+</ul>
+<p class=rvps2><br></p>
+<p class=rvps2>Once a filter condition is entered for a Table or View it is <span class=rvts10>remembered</span>, till the Database is closed. </p>
+<p class=rvps2>Click the <img align=absmiddle border=0 alt="" hspace=1 vspace=1 src="img_278.jpg"> button to <span class=rvts10>Remove all filter</span> for the Table or Column - this will set all the Conditions to *ALL*. </p>
+<p class=rvps7><span class=rvts20>Created with the Freeware Edition of HelpNDoc: </span><a class=rvts21 href="http://www.helpndoc.com" target="_blank">Free help authoring environment</a></p>
+</body></html>
